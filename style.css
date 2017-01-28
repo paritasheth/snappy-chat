@@ -6,7 +6,121 @@
 html, body {
     height: 100%;
     box-sizing: border-box;
+    font-family: "Roboto";
+    font-size: 14px;
 }
 *, *:before, *:after {
     box-sizing: inherit;
+}
+body.homepage{
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+div.main{
+  width: 500px;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.logo{
+  font-size: 50px;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.tagline{
+  font-size: 20px;
+  color: white;
+}
+.button{
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover{
+  background: white;
+  color: blueviolet;
+}
+
+/*
+This is the chat page
+*/
+.member-area{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  background-color: indigo;
+  color: white;
+}
+.user-info{
+  background: purple;
+  padding: 10px;
+}
+.logout{
+  float: right;
+  cursor: pointer;
+}
+.member{
+  padding: 10px;
+  border-bottom:solid 1px white;
+}
+.member:hover{
+  background: white;
+  color: darkblue;
+}
+.message-area{
+  background-color: azure;
+  position: fixed;
+  left: 30%;
+  top: 0;
+  bottom: 0;
+  width: 70%;
+}
+.chat-info{
+  background-color: white;
+  padding: 10px;
+  color: black;
+}
+.member.active{
+  font-weight: bold;
+  background-color: azure;
+  color: darkblue;
+}
+.messages{
+  background: pink;
+  height: 80%;
+  padding: 10px;
+  overflow: auto;
+}
+.message{
+  background: lightgreen;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: black;
+  border-radius: 4px;
+}
+.message.by-user{
+  background-color: yellow;
+}
+.chat-form{
+  position: fixed;
+  left: 30%;
+  bottom: 0;
+  width: 70%;
+  background: white;
+  padding: 20px;
+}
+.chat-message{
+  padding: 10px;
+  border: solid 1px lightgray;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
 }
