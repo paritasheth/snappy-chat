@@ -14,9 +14,24 @@
     </p>
     <button class="button" id="signin-button">Sign in google</button>
   </div>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBmRVwtasTlCNPewCkzd3rHjHMQPFrnEqI",
+    authDomain: "snappychat-87ae2.firebaseapp.com",
+    databaseURL: "https://snappychat-87ae2.firebaseio.com",
+    storageBucket: "snappychat-87ae2.appspot.com",
+    messagingSenderId: "501387004754"
+  };
+  firebase.initializeApp(config);
+</script>
+
   <script type="text/javascript" src="function.js">
   </script>
   <script type="text/javascript" src="app.js">
   </script>
+  <script type="text/javascript" src="chat.js"/>
 </body>
 </html>
